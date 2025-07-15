@@ -1,18 +1,19 @@
-// Initialize Firebase Auth
-const auth = firebase.auth();
+// auth.js
 
-const loginBtn = document.getElementById("loginBtn");
+// Initialize Firebase app
+firebase.initializeApp(firebaseConfig);
 
-loginBtn.addEventListener("click", () => {
-  const provider = new firebase.auth.GoogleAuthProvider();
+// Set up auth
+const provider = new firebase.auth.GoogleAuthProvider();
 
-  auth.signInWithPopup(provider)
-    .then((result) => {
-      const user = result.user;
-      alert(`Welcome, ${user.displayName}!`);
-      // Later we'll redirect them to their dashboard here
+document.getElementById("loginBtn").addEventListener("click", () => {
+  firebase.auth().signInWithPopup(provider)
+    .then(result => {
+      console.log("User signed in:", result.user);
+      window.location.href = "dashboard.html"; // adjust if needed
     })
-    .catch((error) => {
-      console.error("Login error:", error);
-      alert("Login failed. Try again.");
+    .catch(error => {
+      console.error("Error signing in:", error);
+      alert("Login failed. Check console for more info.");
     });
+});
