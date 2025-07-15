@@ -1,5 +1,5 @@
 // Your web app's Firebase configuration
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyCOT9oajBB3jIhPMjshdIbjfpssTllFijI",
   authDomain: "velarune-rpg.firebaseapp.com",
   projectId: "velarune-rpg",
