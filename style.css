@@ -1,0 +1,21 @@
+body {
+  background-color: #1e1e2f;
+  color: #f0e6d2;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #6b4e71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8e6fa8;
+}
