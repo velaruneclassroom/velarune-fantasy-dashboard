@@ -1,16 +1,31 @@
+
+King, Alexandria <aking1@tps501.org>
+2:47 PM (1 minute ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Velarune: Fantasy Realm</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Velarune Fantasy Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Velarune: Fantasy Realm</h1>
-  <button id="login-btn">Log in with Google</button>
+  <div class="login-container">
+    <h1>✨ Enter the Realm of Velarune ✨</h1>
+    <p class="subtext">Log in to begin your quest</p>
+    <button id="loginBtn">🧝 Log In with Google</button>
+  </div>
 
-  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
-<script src="firebase-config.js"></script>
+  <!-- Firebase SDKs (already done) -->
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore.js"></script>
+
+  <!-- Firebase config -->
+  <script src="firebase-config.js"></script>
+
+  <!-- Login logic -->
+  <script src="auth.js"></script>
+</body>
+</html>
