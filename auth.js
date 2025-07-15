@@ -1,20 +1,15 @@
-
-King, Alexandria <aking1@tps501.org>
-3:44 PM (1 minute ago)
-to me
-
 // auth.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js";
 
 // Your Firebase config (from firebase-config.js or directly here)
 const firebaseConfig = {
-  apiKey: "AIzaSyC9Y09QaJb3j1jPMh9sJdDIjp5sTIE1jjI",
+  apiKey: "AIzaSyCOT9oajBB3jIhPMjshdIbjfpssTllFijI",
   authDomain: "velarune-rpg.firebaseapp.com",
   projectId: "velarune-rpg",
-  storageBucket: "velarune-rpg.appspot.com",
+  storageBucket: "velarune-rpg.firebasestorage.app",
   messagingSenderId: "832434090158",
-  appId: "1:832434090158:web:984c3228a6459ce2c1fd3f"
+  appId: "1:832434090158:web:312f11e71dd830d8c1fd3f"
 };
 
 // Initialize Firebase
