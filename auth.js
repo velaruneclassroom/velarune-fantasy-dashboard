@@ -6,6 +6,10 @@ firebase.initializeApp(firebaseConfig);
 // Set up auth
 const provider = new firebase.auth.GoogleAuthProvider();
 
+console.log("Auth script loaded and button found:",
+            document.getElementById("loginBtn"))
+;
+
 document.getElementById("loginBtn").addEventListener("click", () => {
   firebase.auth().signInWithPopup(provider)
     .then(result => {
